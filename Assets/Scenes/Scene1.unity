@@ -215,6 +215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameWinScreen: {fileID: 1278097996}
   player: {fileID: 781693909}
+  stateText: {fileID: 0}
 --- !u!4 &23986241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 355765256554694771, guid: 11940df1ba30fa74e93356b2f3033c9f, type: 3}
@@ -928,6 +929,53 @@ PrefabInstance:
       objectReference: {fileID: 6200000, guid: 66a954db7b9bb28448f6087e78e327ef, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1fd08faeb9c0474ca56ef89deb0c502, type: 3}
+--- !u!1 &742553371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742553373}
+  - component: {fileID: 742553372}
+  m_Layer: 0
+  m_Name: Logic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &742553372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742553371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c75605875a5dd544ac98042fb3bd2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameWinScreen: {fileID: 1278097996}
+  player: {fileID: 781693909}
+  stateText: {fileID: 556593047}
+--- !u!4 &742553373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742553371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3672006, y: 2.4697063, z: 0.008717956}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &781693909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1598,6 +1646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 781693909}
   cam: {fileID: 0}
+  log1: {fileID: 742553371}
 --- !u!1001 &1733897156
 PrefabInstance:
   m_ObjectHideFlags: 0

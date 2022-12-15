@@ -9,6 +9,7 @@ public class CameraMov : MonoBehaviour
     private Vector2 screenBounds;
     public GameObject player;
     public Camera cam;
+    public GameObject log1;
 
     private float prevY;
     
@@ -60,7 +61,8 @@ public class CameraMov : MonoBehaviour
         {
             print("Out of bounds, bottom");
             print("Lost");
-            player.GetComponent<Player>().resetPosition();
+            log1.GetComponent<winLogic>().gameLose();
+            
         }
         
     }
