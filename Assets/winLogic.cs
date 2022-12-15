@@ -8,10 +8,9 @@ public class winLogic : MonoBehaviour
     public GameObject gameWinScreen;
     public GameObject player;
 
-    private void OnCollisionEnter(Collision other) {
-        if (other.gameObject.tag == "Player") {
-            gameWin();
-        }
+    private void OnCollisionEnter2D(Collision2D other) 
+    {
+        gameWin();
     }
 
     public void gameWin()
@@ -22,6 +21,7 @@ public class winLogic : MonoBehaviour
 
     public void restartGame()
     {
+        Debug.Log("Restarting Game");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
